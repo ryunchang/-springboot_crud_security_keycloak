@@ -1,5 +1,6 @@
 com/kt/edu/thirdproject/common/config/RequestBodyWrapper$ServletImpl.class
 com/kt/edu/thirdproject/common/config/Sha256PasswordEncoder.class
+com/kt/edu/thirdproject/employee/runner/KeycloakInitializerRunner$UserPass.class
 com/kt/edu/thirdproject/common/config/CacheConfig.class
 com/kt/edu/thirdproject/common/util/JwtTokenUtil.class
 com/kt/edu/thirdproject/common/filter/MultiReadHttpServletRequest.class
@@ -11,6 +12,7 @@ com/kt/edu/thirdproject/employee/controller/EmployeeController.class
 com/kt/edu/thirdproject/common/config/JwtRequestFilter.class
 com/kt/edu/thirdproject/common/config/JwtAuthConverter.class
 com/kt/edu/thirdproject/common/filter/LogFilter.class
+com/kt/edu/thirdproject/employee/runner/KeycloakInitializerRunner.class
 com/kt/edu/thirdproject/common/filter/MultiReadHttpServletRequest$CachedServletInputStream.class
 com/kt/edu/thirdproject/employee/runner/KeycloakAdminConfig.class
 com/kt/edu/thirdproject/common/exception/ResourceNotFoundException.class

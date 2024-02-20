@@ -17,7 +17,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8080/realms/employee-services
+          issuer-uri: http://keycloak.yoonchang.duckdns.org:30002/realms/employee-services
 
 #  security:
 #    user:
@@ -46,9 +46,9 @@ jwt:
 
 app:
   cors:
-    allowed-origins: http://localhost:3000
+    allowed-origins: http://frontend.yoonchang.duckdns.org:30002
   keycloak:
-    server: http://localhost:8080
+    server: http://keycloak.yoonchang.duckdns.org:30002
 
 # app
 app-info:

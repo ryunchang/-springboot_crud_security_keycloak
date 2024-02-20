@@ -14,7 +14,7 @@ public class KeycloakAdminConfig {
                 .serverUrl("http://keycloak.yoonchang.duckdns.org:30002")
                 .realm("master")
                 .username("admin")
-                .password("admin")
+                .password("New1234!")
                 .clientId("admin-cli")
                 .build();
     }

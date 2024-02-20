@@ -46,7 +46,7 @@ jwt:
 
 app:
   cors:
-    allowed-origins: http://frontend.yoonchang.duckdns.org:40001
+    allowed-origins: http://frontend.yoonchang.duckdns.org:30002
   keycloak:
     server: http://keycloak.yoonchang.duckdns.org:30002
 

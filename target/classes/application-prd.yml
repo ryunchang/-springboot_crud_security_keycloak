@@ -16,7 +16,7 @@ spring:
     platform: mariadb
     #driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
     driverClassName: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://localhost:40000/EMPLOYEE
+    url: jdbc:mariadb://211.43.13.141:40000/EMPLOYEE
     username: admin
     #password: caravan
     password: ENC(h6YDAy6YtwsuvieRhDoSSA==)

@@ -98,7 +98,7 @@ public class KeycloakInitializerRunner implements CommandLineRunner {
         return Map.of(EMPLOYEE_APP_CLIENT_ID, roles);
     }
 
-    private static final String KEYCLOAK_SERVER_URL = " http://keycloak.yoonchang.duckdns.org:30002";
+    private static final String KEYCLOAK_SERVER_URL = "http://keycloak.yoonchang.duckdns.org:30002";
     private static final String COMPANY_SERVICE_REALM_NAME = "employee-services";
     private static final String EMPLOYEE_APP_CLIENT_ID = "employee-app";
     private static final String EMPLOYEE_APP_REDIRECT_URL = "http://frontend.yoonchang.duckdns.org:30002/*";
