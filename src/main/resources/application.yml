@@ -1,0 +1,68 @@
+server:
+  tomcat:
+    url-encoding: UTF-8
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: edu-spring-keycloak
+  profiles:
+    active: prd
+  banner:
+    location: "classpath:banner.txt"
+# cache 사용을 위해 cache name 설정
+  cache:
+    cache-names: employee
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/employee-services
+
+#  security:
+#    user:
+#      name: admin
+#      password: admin
+#  boot:
+#    admin:
+#      client:
+#        url: http://localhost:8080
+
+# logging
+logging:
+  config: classpath:log4j2.xml
+
+##jasypt encryptor
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor
+
+jwt:
+  secret: edujwt
+  auth:
+    converter:
+      resource-id: employee-app
+      principal-attribute: preferred_username
+
+app:
+  cors:
+    allowed-origins: http://localhost:3000
+  keycloak:
+    server: http://localhost:8080
+
+# app
+app-info:
+  app-name: "edu-spring-data-jdbc"
+  title: "Cloud Native Edu API"
+  build:
+    version: '@project.version@'
+    timestamp: '@app.build.timestamp@'
+  user-id: "jake lee"
+  org-id: "KT"
+  desc: "EDU 관련 설명입니다."
+  doc-url: "https://github.com/kt-cloudnative/education/"
+  license: "Apache License"
+  license_url: "https://github.com/kt-cloudnative/education/"
+  version: "@app.build.timestamp@"
+  doc-desc: "교육용"
+
