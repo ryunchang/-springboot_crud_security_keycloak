@@ -30,13 +30,6 @@ spring:
 #        prepStmtCacheSqlLimit: 2048
 #        useServerPrepStmts: true
 
-#jpa:
-#  database-platform: org.hibernate.dialect.MySQL57Dialect
-#  open-in-view: false
-#  show-sql: true
-#  hibernate:
-#    ddl-auto: update
-
 springdoc:
   swagger-ui:
     operations-sorter: alpha
